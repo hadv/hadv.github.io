@@ -153,7 +153,53 @@ Then three commits  `b32c6b4`,  `067bea0` and  `b32c6b4` of waiportal branch wil
   After that, the history log of `waiportal` will be changed to as below
   
   ```
+  * 2968231 super one commit by using rebase
+  * 2169678 ECMS-3470
+  *   b39a42d Merge branch 'waiportal'
+  |\  
+  | * 53e11b7 ECMS-3574
+  | * 26583f2 ECMS-3446
+  | * 57d0a2b ECMS-2983
+  | * 35e6db5 ECMS-3519
+  | * d4f9793 ECMS-3513
+  * | 052e7e9 ECMS-3515
+  |/  
+  * 1b491f9 remove sensitive data
+  * 827b77c add sensitive data
+  * 1870a21 remove the svn plugin pom  
   ```
+  
+  3. Then switch to master branch
+  ```
+  $ git checkout master
+  ```
+  
+  4. Finally, use git merge to merge the waiportal onto master branch
+  ```
+  $ git merge waiportal
+  ```
+  
+  > The current history log of master after merging might be like below:
+  
+  ```
+  * 2968231 super one commit by using rebase
+  * 2169678 ECMS-3470 
+  *   b39a42d Merge branch 'waiportal' 
+  |\  
+  | * 53e11b7 ECMS-3574 
+  | * 26583f2 ECMS-3446 
+  | * 57d0a2b ECMS-2983 
+  | * 35e6db5 ECMS-3519 
+  | * d4f9793 ECMS-3513 
+  * | 052e7e9 ECMS-3515 
+  |/  
+  * 1b491f9 remove sensitive data 
+  * 827b77c add sensitive data 
+  * 1870a21 remove the svn plugin pom 
+  ```
+  
+  
+
 
 
 
