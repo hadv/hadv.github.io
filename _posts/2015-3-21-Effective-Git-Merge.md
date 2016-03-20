@@ -145,7 +145,16 @@ Then three commits  `b32c6b4`,  `067bea0` and  `b32c6b4` of waiportal branch wil
   
   We want to merge three above commits into only one commit, so we modify the history as below
   ```
+  p b32c6b4 modify pom file to upgrade icepdf to 4.3.3 version
+  s 067bea0 fix the heading order in content view
+  s 37cef38 fix the uncaught exception in javascript
   ```
+  
+  After that, the history log of `waiportal` will be changed to as below
+  
+  ```
+  ```
+
 
 
 
