@@ -1,5 +1,8 @@
 
-### Reset mật khẩu root cho MySQL trên Ubuntu
+---
+layout: post
+title: Reset mật khẩu root cho MySQL trên Ubuntu
+---
 
 Đôi khi cài đặt `MySQL` trên `Ubuntu` hoặc trên các HĐH khác, trình cài đặt sẽ tự động set một mật khẩu ngẫu nhiên cho tài khoản `root`, nếu không để ý thì sau khi cài đặt bạn sẽ không biết mật khẩu `root` để login vào mysql là gì hoặc một ngày đẹp trời bạn bỗng dưng quên mất mật khẩu `root` để login vào `mysql`. Vậy có cách nào để đặt lại mật khẩu cho tài khoản `root` hay không? Quá đơn giản, bạn chỉ cần làm theo các bước sau đây:
 
