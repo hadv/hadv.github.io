@@ -15,7 +15,7 @@ title: Reset mật khẩu root cho MySQL trên Ubuntu
 
 	```
 	$ sudo mysqld_safe --skip-grant-tables &
-  	$ mysql -u root -p
+	$ mysql -u root -p
     	```
 
 3. Chạy các lệnh sau trong mysql để reset lại mật khẩu cho tài khoản root
@@ -25,15 +25,16 @@ title: Reset mật khẩu root cho MySQL trên Ubuntu
 	mysql> update user set password=PASSWORD("Mật_khẩu_mới") where user='root';
 	mysql> flush privileges;
 	mysql> quit
-    	```
+	```
     	
 4. Sau đó, khởi động lại `mysql` và bạn có thể login vào mysql với mật khẩu mới 
+
 	```
-    	$ sudo service mysql stop
-  	$ sudo service mysql start
+	$ sudo service mysql stop
+	$ sudo service mysql start
  	$ mysql -u root -p
  	```
- 	
+
 Ngoài ra, bạn có thể xem lịch sử reset mật khẩu của `mysql` bằng cách xem file `/home/$USER/.mysql_history`của người đã thực hiện reset mật khẩu.
 
 
