@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Reset mật khẩu root cho MySQL trên Ubuntu
