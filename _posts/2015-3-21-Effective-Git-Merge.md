@@ -5,7 +5,7 @@ title: How to do git merge with beauty history log
 
 For example, We have a branch named `waiportal` dedicated to develop new site that have full accessibility. After finish it; we want to merge this branch into `master` branch (trunk); then we do the steps as below:
 
-Current history of `master` as below:
+Current history of `master` as below
 ```
 052e7e9 ECMS-3515 
 1b491f9 remove sensitive data 
